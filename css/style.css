@@ -7,3 +7,43 @@
 body {
     font-family: sans-serif;
 }
+
+/* Realizzazione struttura header */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #aaa;
+    height: 65px;
+}
+
+.funzioni {
+    background-color: orange;
+    width: 450px;
+    height: 100%;
+}
+
+.supporto {
+    background-color: yellowgreen;
+    width: 450px;
+    height: 100%;
+}
+
+/* Realizzazione struttura area sotto l'header */
+.contenitorePrimario{
+    background-color: #b4d0e7;
+    width: 100%;
+    height: 582px;
+}
+
+.areaJumbo{
+    max-width: 950px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #86bfed;
+}
+
+/* Realizzazione struttura area principale */
+.contenitoreSecondario{
+
+}
