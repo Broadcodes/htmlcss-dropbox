@@ -45,5 +45,54 @@ header {
 
 /* Realizzazione struttura area principale */
 .contenitoreSecondario{
+    background-color: #d3b3cd;
+    width: 100%;
+    height: 4000px;
+}
 
+.contenitoreMain{
+    max-width: 780px;
+    margin: 0 auto;
+    
+}
+
+.areaPrezzi{
+    background-color: #86ed92;
+    height: 1000px;
+}
+
+.partnerDrop{
+    background-color: #e8ed86;
+    height: 600px;
+}
+
+.operazioni{
+    background-color: #edc586;
+    height: 1100px;
+}
+
+.loghiParter{
+    width: 100%;
+    height: 500px;
+    background-color: #86edc7;
+}
+
+.dropBusiness{
+    width: 100%;
+    height: 300px;
+    background-color: #2633a8;
+}
+
+.faq{
+    width: 100%;
+    height: 550px;
+    background-color: #a82651;
+}
+
+/* Realizzazione struttura area footer */
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+    color: #fff;
 }
