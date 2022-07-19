@@ -42,6 +42,17 @@ header ul{
     align-items: center;
 }
 
+header ul li:not(li[id="logo"], li[class="pulsante"]){
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header ul li:not(li[id="logo"], li[class="pulsante"]):hover{
+    border-bottom: 2px solid #6b6b6b;
+    padding-top: 2px;
+}
+
 .funzioni img{
     margin-top: 5px;
     margin-left: 3px;
