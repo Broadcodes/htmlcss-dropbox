@@ -141,10 +141,45 @@ header ul li:not(li[id="logo"], li[class="pulsante"]):hover{
 text-decoration: underline;
 }
 
-.freccia{
+#areaFrecciaScroll{
+    position: relative;
+    height: 115px;
+    cursor: auto;
+}
+
+#frecciaScroll{
+    padding: 30px 0;
+    position: absolute;
     font-size: 2.5rem;
     margin: 55px 0 15px;
+    cursor: pointer;
+    transform: translateY(-30px);
 }
+
+#frecciaScroll:hover{
+    animation-name: scorri;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scorri {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 15px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+
+
+
+
 
 /* Main: Area principale contenente le info sul prodotto */
 .contenitoreSecondario{
