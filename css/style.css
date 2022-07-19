@@ -208,8 +208,6 @@ header ul li a:not(a[id="logo"], a[id="pulsante"]):hover {
 /* Main: Area principale contenente le info sul prodotto */
 .contenitoreSecondario {
     width: 100%;
-    height: 4500px;
-    /* da rimuovere */
 }
 
 .contenitoreMain {
@@ -455,6 +453,7 @@ label {
 
 .quadrato img {
     width: 50%;
+    filter: invert(100%);
 }
 
 .quadrato:hover img {
@@ -496,31 +495,68 @@ label {
 .dropBusiness {
     width: 100%;
     background-color: #b4d0e7;
-    justify-content: center;
+}
+
+.styleArea{
+    justify-content: space-between;
     align-items: center;
 }
 
-.dropBusiness h2 {
+.dropBusiness .styleArea h2 {
     font-size: 2rem;
     color: #610833;
-    padding: 90px 200px 90px 0;
+    padding: 100px 0;
 }
 
-.dropBusiness a {
+.dropBusiness .styleArea a {
     border: none;
     padding: 8px 35px;
 }
 
-
-
-
-
-
+/* Main: area faq */
 .faq {
     width: 100%;
-    height: 550px;
-    background-color: #a82651;
+    height: 340px;
 }
+
+.faq h2{
+    font-size: 2rem;
+}
+
+.areaDescrizioneFaq{
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: all 5s;
+}
+
+.domandaFaq{
+    flex-basis: 94%;
+    padding: 30px 0;
+    font-weight: 800;
+}
+
+.domandaFaq-icona{
+    flex-basis: 6%;
+}
+
+.descrizioneNascostaFaq{
+    flex-basis: 100%;
+    display: none;
+    padding: 0 80px 30px 30px;
+}
+
+.areaDescrizioneFaq:active .descrizioneNascostaFaq{
+    display: block;
+    
+}
+
+
+
+
+
+
+
+
 
 /* Footer */
 footer {
