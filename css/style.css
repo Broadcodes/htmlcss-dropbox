@@ -42,13 +42,14 @@ header ul{
     align-items: center;
 }
 
-header ul li:not(li[id="logo"], li[class="pulsante"]){
-    height: 100%;
+header ul li a:not(a[id="logo"], a[id="pulsante"]){
+    transition: all 200ms;
+    padding: 15px 0;
     display: flex;
     align-items: center;
 }
 
-header ul li:not(li[id="logo"], li[class="pulsante"]):hover{
+header ul li a:not(a[id="logo"], a[id="pulsante"]):hover{
     border-bottom: 2px solid #6b6b6b;
     padding-top: 2px;
 }
@@ -82,7 +83,7 @@ header ul li:not(li[id="logo"], li[class="pulsante"]):hover{
     font-weight: 400;
 }
 
-/* Header: Area presentazione sotto l'header */
+/* Main: Area presentazione sotto l'header */
 .contenitorePrimario{
     padding-top: 65px;
     background-color: #b4d0e7;
@@ -176,11 +177,6 @@ text-decoration: underline;
     }
 }
 
-
-
-
-
-
 /* Main: Area principale contenente le info sul prodotto */
 .contenitoreSecondario{
     width: 100%;
@@ -193,9 +189,7 @@ text-decoration: underline;
 }
 
 .areaPrezzi{
-    padding-top: 120px;
-    background-color: #fff3fd;
-    height: 1500px; /* da rimuovere */
+    padding: 120px 0;
 }
 
 .areaPrezzi h2{
@@ -234,6 +228,7 @@ label{
     justify-content: space-between;
     flex-wrap: wrap;
     column-gap: 13px;
+    padding-bottom: 40px;
 }
 
 .schedaPrezzo{
@@ -267,7 +262,7 @@ label{
     padding-bottom: 10px;
 }
 
-#provaGratuita{
+.elementoPulsante{
     color: #fff;
     font-size: 0.7rem;
     display: block;
@@ -286,9 +281,14 @@ label{
 }
 
 .descrizione i{
+    font-size: 0.7rem;
     flex-basis: 5px;
     padding: 7px 0;
     padding-right: 5px;
+}
+
+.descrizione i[class="fa-solid fa-check"]{
+    color: #1c64ff;
 }
 
 .schedaProdotto p,
@@ -312,8 +312,15 @@ label{
     padding-top: 35px;
 }
 
+/* Main: Quarto contenitore orizzontale relativo alla scheda prodotto */
+.scherdaPrezzoOrizzontale{
+    width: 100%;
+    border: 1px solid #bdbdc0;
+}
 
-
+.flexBasis-PulsanteContattiUffico{
+    flex-basis: calc(100% / 3 - 2px);
+}
 
 
 
