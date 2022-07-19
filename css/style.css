@@ -10,18 +10,41 @@ body {
     color: rgb(30, 30, 30);
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.bg-fff{background-color: #fff;}
-.bg-a2d39b{background-color: #a2d39b;}
-.bg-61082b{background-color: #61082b;}
-.bg-0093ce{background-color: #0093ce;}
-.bg-ff1c1c{background-color: #ff1c1c;}
-.bg-b4d0e7{background-color: #b4d0e7;}
-.bg-0d2481{background-color: #0d2481;}
-.bg-ffd830{background-color: #ffd830;}
+.bg-fff {
+    background-color: #fff;
+}
+
+.bg-a2d39b {
+    background-color: #a2d39b;
+}
+
+.bg-61082b {
+    background-color: #61082b;
+}
+
+.bg-0093ce {
+    background-color: #0093ce;
+}
+
+.bg-ff1c1c {
+    background-color: #ff1c1c;
+}
+
+.bg-b4d0e7 {
+    background-color: #b4d0e7;
+}
+
+.bg-0d2481 {
+    background-color: #0d2481;
+}
+
+.bg-ffd830 {
+    background-color: #ffd830;
+}
 
 /* Header: barra superiore */
 header {
@@ -40,89 +63,89 @@ header {
     padding-right: 5px;
 }
 
-header ul{
+header ul {
     height: 65px;
     list-style-type: none;
     justify-content: space-around;
     align-items: center;
 }
 
-header ul li a:not(a[id="logo"], a[id="pulsante"]){
+header ul li a:not(a[id="logo"], a[id="pulsante"]) {
     transition: all 200ms;
     padding: 15px 0;
     display: flex;
     align-items: center;
 }
 
-header ul li a:not(a[id="logo"], a[id="pulsante"]):hover{
+header ul li a:not(a[id="logo"], a[id="pulsante"]):hover {
     border-bottom: 2px solid #6b6b6b;
     padding-top: 2px;
 }
 
-.funzioni img{
+.funzioni img {
     margin-top: 5px;
     margin-left: 3px;
     width: 100px;
 }
 
 .funzioni a,
-.supporto a{
+.supporto a {
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: 600;
     color: #6b6b6b;
 }
 
-.pulsante{
+.pulsante {
     background-color: #0061ff;
     padding: 5px 13px;
     cursor: pointer;
 }
 
-.pulsante:hover{
+.pulsante:hover {
     background-color: #2075ff;
 }
 
-.pulsante a{
+.pulsante a {
     color: #fff;
     font-weight: 400;
 }
 
 /* Main: Area presentazione sotto l'header */
-.contenitorePrimario{
+.contenitorePrimario {
     padding-top: 65px;
     background-color: #b4d0e7;
     width: 100%;
 }
 
-.areaJumbo{
+.areaJumbo {
     max-width: 950px;
     margin: 0 auto;
 }
 
-.areaJumbo h1{
+.areaJumbo h1 {
     padding: 60px 0 40px;
     font-size: 3.9rem;
     font-weight: 800;
 }
 
-.presentazioneJumbo{
+.presentazioneJumbo {
     position: relative;
 }
 
-.testoPulsanti{
+.testoPulsanti {
     flex-basis: 31%;
 }
 
-.testoPulsanti a, 
-.testoPulsanti p{
+.testoPulsanti a,
+.testoPulsanti p {
     display: block;
     color: rgb(30, 30, 30);
     text-decoration: none;
     font-weight: 600;
 }
 
-#stylePulsante{
+#stylePulsante {
     text-decoration: none;
     padding: 10px;
     margin: 25px 0 20px;
@@ -131,29 +154,29 @@ header ul li a:not(a[id="logo"], a[id="pulsante"]):hover{
     display: inline-block;
 }
 
-.presentazioneJumbo img{
+.presentazioneJumbo img {
     position: absolute;
     left: 30%;
     flex-grow: 1;
     max-width: 680px;
 }
 
-#annullaIscrizione{
+#annullaIscrizione {
     padding: 0px;
     margin: 0;
 }
 
-#annullaIscrizione:hover{
-text-decoration: underline;
+#annullaIscrizione:hover {
+    text-decoration: underline;
 }
 
-#areaFrecciaScroll{
+#areaFrecciaScroll {
     position: relative;
     height: 115px;
     cursor: auto;
 }
 
-#frecciaScroll{
+#frecciaScroll {
     padding: 30px 0;
     position: absolute;
     font-size: 2.5rem;
@@ -162,7 +185,7 @@ text-decoration: underline;
     transform: translateY(-30px);
 }
 
-#frecciaScroll:hover{
+#frecciaScroll:hover {
     animation-name: scorri;
     animation-duration: 400ms;
     animation-iteration-count: infinite;
@@ -183,32 +206,33 @@ text-decoration: underline;
 }
 
 /* Main: Area principale contenente le info sul prodotto */
-.contenitoreSecondario{
+.contenitoreSecondario {
     width: 100%;
-    height: 4500px; /* da rimuovere */
+    height: 4500px;
+    /* da rimuovere */
 }
 
-.contenitoreMain{
+.contenitoreMain {
     max-width: 790px;
     margin: 0 auto;
 }
 
-.areaPrezzi{
+.areaPrezzi {
     padding: 120px 0;
 }
 
-.areaPrezzi h2{
+.areaPrezzi h2 {
     font-size: 2rem;
     font-weight: 700;
 }
 
-.radioSceltaPrezzo{
+.radioSceltaPrezzo {
     padding: 42px 0;
 }
 
-input[type=radio]{
+input[type=radio] {
     width: 17px;
-    height: 17px; 
+    height: 17px;
     border: 2px solid #d1d1d4;
     background-color: #fff;
     background-clip: content-box;
@@ -216,32 +240,32 @@ input[type=radio]{
     border-radius: 50%;
     line-height: 25px;
     vertical-align: middle;
-} 
+}
 
 input[type="radio"]:checked {
     border: 4px solid #0061ff;
-	background-color: #fff;
+    background-color: #fff;
 }
 
-label{
+label {
     padding-right: 40px;
     font-size: 0.7rem;
 }
 
 /* Main: ontenitore relativo alla scheda prodotto */
-.abbonamento{
+.abbonamento {
     justify-content: space-between;
     flex-wrap: wrap;
     column-gap: 13px;
     padding-bottom: 40px;
 }
 
-.schedaPrezzo{
+.schedaPrezzo {
     width: calc(100% / 3 - 2px - 26px);
     border: 1px solid #bdbdc0;
 }
 
-.titoloScheda{
+.titoloScheda {
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -249,25 +273,25 @@ label{
     padding: 8px 0;
 }
 
-.titoloScheda i{
+.titoloScheda i {
     padding-right: 5px;
 }
 
-.titoloScheda h3{
+.titoloScheda h3 {
     font-size: 0.7rem;
     font-weight: 500;
 }
 
-.schedaProdotto{
+.schedaProdotto {
     padding: 25px;
 }
 
-.schedaProdotto h2{
+.schedaProdotto h2 {
     font-size: 1.2rem;
     padding-bottom: 10px;
 }
 
-.elementoPulsante{
+.elementoPulsante {
     color: #fff;
     font-size: 0.7rem;
     display: block;
@@ -277,111 +301,112 @@ label{
     text-decoration: none;
 }
 
-.margineDivisore30{
+.margineDivisore30 {
     margin-bottom: 30px;
 }
 
-.margineDivisore50{
+.margineDivisore50 {
     margin-bottom: 50px;
 }
 
-.margineDivisore120{
+.margineDivisore120 {
     margin-bottom: 120px;
 }
 
-.descrizione{
+.descrizione {
     list-style-type: none;
 }
 
-.descrizione i{
+.descrizione i {
     font-size: 0.7rem;
     flex-basis: 5px;
     padding: 7px 0;
     padding-right: 5px;
 }
 
-.descrizione i[class="fa-solid fa-check"]{
+.descrizione i[class="fa-solid fa-check"] {
     color: #1c64ff;
 }
 
 .schedaProdotto p,
-.descrizione p{
+.descrizione p {
     flex-grow: 1;
     font-size: 0.7rem;
     padding: 5px 0;
 }
 
-.schedaProdotto p span{
+.schedaProdotto p span {
     padding-bottom: 30px;
     border-bottom: 1px solid #bdbdc0;
 }
 
-.font-weight700{
+.font-weight700 {
     font-weight: 700;
 }
 
-#caratteristicheProdotto{
+#caratteristicheProdotto {
     font-size: 0.7rem;
     padding-top: 35px;
 }
 
 /* Main: Quarto contenitore orizzontale relativo alla scheda prodotto */
-.scherdaPrezzoOrizzontale{
+.scherdaPrezzoOrizzontale {
     width: 100%;
     border: 1px solid #bdbdc0;
 }
 
-.flexBasis-PulsanteContattiUffico{
+.flexBasis-PulsanteContattiUffico {
     flex-basis: calc(100% / 3 - 2px);
 }
 
 /* Main: area partner */
-.partnerDrop img{
+.partnerDrop img {
     width: 60%;
     padding-bottom: 120px;
 }
 
-.areaPartner{
+.areaPartner {
     padding: 40px;
 }
 
-.areaPartner p{
+.areaPartner p {
     margin-bottom: 15px;
     padding: 15px 0;
     line-height: 1.1rem;
     font-weight: 500;
 }
 
-.pulsante-bianco{
+.pulsante-bianco {
     background-color: #fff;
     padding: 6px 11px;
     border: 2px solid #7f7f7f;
     text-decoration: none;
 }
 
-.pulsante-bianco:hover{
+.pulsante-bianco:hover {
     background-color: rgb(245, 245, 245);
 }
 
 /* Main: area operazioni Dropbox business */
-.operazioni h2{
+.operazioni h2 {
     font-size: 2rem;
 }
 
-.operazioni a{
+.operazioni a {
     text-decoration: none;
 }
-.operazioni a:hover{
+
+.operazioni a:hover {
     text-decoration: underline;
 }
 
-.contenitoreSchedeOperazioni{
+.contenitoreSchedeOperazioni {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 100px;
 }
 
-.singolaOperazione{
+.singolaOperazione {
     width: calc(100% / 3 - 25px);
     column-gap: 25px;
     margin: 55px 0 20px;
@@ -389,27 +414,27 @@ label{
     padding-bottom: 10px;
 }
 
-.singolaOperazione:hover{
+.singolaOperazione:hover {
     transition: all 300ms;
     transform: scale(1.05);
     box-shadow: 12px 12px 15px rgb(230, 230, 230);
 }
 
-.singolaOperazione img{
+.singolaOperazione img {
     width: 100%;
 }
 
-.singolaOperazione h3{
+.singolaOperazione h3 {
     font-size: 1.2rem;
     padding-bottom: 15px;
 }
 
-.singolaOperazione p{
+.singolaOperazione p {
     font-weight: 500;
 }
 
 /* Main: area operazioni loghi Partner */
-.quadratiEsterni{
+.quadratiEsterni {
     flex-basis: calc(100% / 3);
     height: calc(100vw / 3);
     display: flex;
@@ -417,39 +442,39 @@ label{
     background-color: #f5f5f5;
 }
 
-.quadrato{
+.quadrato {
     width: 50%;
     height: 50%;
     justify-content: center;
     align-items: center;
 }
 
-.quadrato:hover{
+.quadrato:hover {
     border: 13px solid rgba(255, 255, 255, 0.5);
 }
 
-.quadrato img{
+.quadrato img {
     width: 50%;
 }
 
-.quadrato:hover img{
+.quadrato:hover img {
     width: calc(50% + 13px);
     transition: transform 400ms;
     transform: rotate(-25deg);
 }
 
-.quadratoEsternoCentrale{
+.quadratoEsternoCentrale {
     position: relative;
 }
 
-.quadratoEsternoCentrale img{
+.quadratoEsternoCentrale img {
     width: 50%;
     position: absolute;
     top: 8%;
     left: 40px;
 }
 
-.quadratoEsternoCentrale span{
+.quadratoEsternoCentrale span {
     position: absolute;
     top: 33%;
     left: 40px;
@@ -458,7 +483,7 @@ label{
     background-color: #d8d8da;
 }
 
-.quadratoEsternoCentrale .testoQuadratoCentrale{
+.quadratoEsternoCentrale .testoQuadratoCentrale {
     height: calc(100vw / 6);
     position: absolute;
     top: 42%;
@@ -468,20 +493,20 @@ label{
 }
 
 /* Main: area prova gratuita Dropbox business */
-.dropBusiness{
+.dropBusiness {
     width: 100%;
     background-color: #b4d0e7;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
-.dropBusiness h2{
+.dropBusiness h2 {
     font-size: 2rem;
     color: #610833;
     padding: 90px 200px 90px 0;
 }
 
-.dropBusiness a{
+.dropBusiness a {
     border: none;
     padding: 8px 35px;
 }
@@ -491,16 +516,71 @@ label{
 
 
 
-.faq{
+.faq {
     width: 100%;
     height: 550px;
     background-color: #a82651;
 }
 
-/* Realizzazione struttura area footer */
-footer{
+/* Footer */
+footer {
     width: 100%;
-    height: 500px;
     background-color: #000;
     color: #fff;
+    padding: 80px 0 40px;
+}
+
+.contenitoreFooter {
+    max-width: 1000px;
+    padding-bottom: 80px;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colonnaFooter{
+    width: calc(100% / 5 - 60px);
+}
+
+.colonnaFooter li h2{
+    padding-bottom: 20px;
+}
+
+.colonnaFooter ul{
+    list-style-type: none;
+}
+
+.colonnaFooter ul li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.colonnaFooter ul li a:hover{
+    color: #b4d0e7;
+    text-decoration: underline;
+}
+
+.contenitoreFooterInferiore{
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.contenitoreFooterInferiore span{
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.contenitoreFooterInferiore p{
+    color: #999;  
+    font-size: 0.8rem; 
+}
+
+.contenitoreFooterInferiore i{
+    padding-right: 7px;
+    font-size: 0.8rem;
+    color: #999;
 }
