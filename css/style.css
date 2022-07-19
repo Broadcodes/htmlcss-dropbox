@@ -352,14 +352,14 @@ label{
     font-weight: 500;
 }
 
-#pulsante-partner{
+.pulsante-bianco{
     background-color: #fff;
     padding: 6px 11px;
     border: 2px solid #7f7f7f;
     text-decoration: none;
 }
 
-#pulsante-partner:hover{
+.pulsante-bianco:hover{
     background-color: rgb(245, 245, 245);
 }
 
@@ -467,21 +467,29 @@ label{
     overflow-y: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* Main: area prova gratuita Dropbox business */
 .dropBusiness{
     width: 100%;
-    height: 300px;
-    background-color: #2633a8;
+    background-color: #b4d0e7;
+    justify-content:center;
+    align-items: center;
 }
+
+.dropBusiness h2{
+    font-size: 2rem;
+    color: #610833;
+    padding: 90px 200px 90px 0;
+}
+
+.dropBusiness a{
+    border: none;
+    padding: 8px 35px;
+}
+
+
+
+
+
 
 .faq{
     width: 100%;
