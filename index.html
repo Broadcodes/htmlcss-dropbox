@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="it">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dropbox</title>
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
-            rel="stylesheet">
-    
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        <link rel="shortcut icon" href="img/dropbox-icon.svg" type="image/x-icon">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropbox</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="img/dropbox-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
     <!-- Header: barra superiore -->
@@ -42,17 +42,202 @@
     </header>
 
     <main>
-        <!-- Realizzazione struttura area sotto l'header -->
+        <!-- Header: Area presentazione sotto l'header -->
         <div class="contenitorePrimario">
             <div class="areaJumbo">
-                JUMBO
+                <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+                <div class="presentazioneJumbo flex">
+                    <div class="testoPulsanti">
+                        <p>Finalmente tutti i tuoi strumenti, contenuti e
+                            collaboratori sono accessibili dallo stesso posto.
+                            Dropbox Business è più di uno spazio di
+                            archiviazione sicuro: è un modo intelligente e
+                            integrato per ottimizzare il flusso di lavoro esistente.
+                        </p>
+
+                        <a class="pulsante" id="stylePulsante" href="#">Inizia la tua prova gratuita</a>
+                        <a id="annullaIscrizione" href="#">Annulla in qualsiasi momento</a>
+
+                        <a href=""><i class="fa-solid fa-arrow-down freccia"></i></a>
+                    </div>
+                    <img src="img/jumbo.png" alt="Proposta per il cliente">
+                </div>
             </div>
         </div>
 
-        <!-- Realizzazione struttura area principale -->
-        <div class="contenitoreSecondario">
+        <!-- Main: Area principale contenente le info sul prodotto -->
+        <div class="contenitoreSecondario bg-fff">
             <div class="areaPrezzi contenitoreMain">
-                AREA PREZZI
+                <h2>Trova il piano business che fa per te</h2>
+                <div class="radioSceltaPrezzo">
+                    <input id="mensile" type="radio" name="prezzo" checked>
+                    <label for="mensile">Fatturazione mensile</label>
+                    <input id="annuale" type="radio" name="prezzo">
+                    <label for="annuale">Fatturazione annuale</label>
+                </div>
+
+                <!-- Main: Primo contenitore relativo alla scheda prodotto -->
+                <div class="abbonamento flex">
+                    <div class="schedaPrezzo">
+                        <div class="titoloScheda flex">
+                            <i class="fa-solid fa-user"></i>
+                            <h3>Singolo</h3>
+                        </div>
+                        <div class="schedaProdotto">
+                            <h2>Professional</h2>
+                            <p class="font-weight700">&euro; 12.00</p>
+                            <p class="margineDivisore">/mese</p>
+
+                            <ul>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>1 utente</p>
+                                </li>
+
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>5 TB di spazio di archiviazione sicuro</p>
+                                </li>
+
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p class="margineDivisore">Funzioni di produttività premium e condivisione file
+                                        semplice e sicura</p>
+                                </li>
+                            </ul>
+
+                            <a id="provaGratuita" class="pulsante" href="#">Prova gratis per 30 giorni</a>
+
+                            <p class="margineDivisore"><span>oppure</span> <a href="#">acquista ora</a></p>
+
+                            <p id="caratteristicheProdotto" class="font-weight700">Punti Salienti del piano</p>
+
+                            <ul>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Invia file fino a 100 GB con Dropbox Transfert</p>
+                                </li>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Cartelle offline su dispositivi mobili</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Main: Secondo contenitore relativo alla scheda prodotto -->
+                    <div class="schedaPrezzo">
+                        <div class="titoloScheda flex">
+                            <i class="fa-solid fa-user"></i>
+                            <h3>Team</h3>
+                        </div>
+                        <div class="schedaProdotto">
+                            <h2>Advanced</h2>
+                            <p class="font-weight700">&euro; 12.00</p>
+                            <p class="margineDivisore">/mese</p>
+
+                            <ul>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>1 utente</p>
+                                </li>
+
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>5 TB di spazio di archiviazione sicuro</p>
+                                </li>
+
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p class="margineDivisore">Funzioni di produttività premium e condivisione file
+                                        semplice e sicura</p>
+                                </li>
+                            </ul>
+
+                            <a id="provaGratuita" class="pulsante" href="#">Prova gratis per 30 giorni</a>
+
+                            <p class="margineDivisore"><span>oppure</span> <a href="#">acquista ora</a></p>
+
+                            <p id="caratteristicheProdotto" class="font-weight700">Punti Salienti del piano</p>
+
+                            <ul>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Invia file fino a 100 GB con Dropbox Transfert</p>
+                                </li>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Cartelle offline su dispositivi mobili</p>
+                                </li>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Cartelle offline su dispositivi mobili</p>
+                                </li>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Cartelle offline su dispositivi mobili</p>
+                                </li>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Cartelle offline su dispositivi mobili</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Main: Terzo contenitore relativo alla scheda prodotto -->
+                    <div class="schedaPrezzo">
+                        <div class="titoloScheda flex">
+                            <i class="fa-solid fa-user"></i>
+                            <h3>Azienda</h3>
+                        </div>
+                        <div class="schedaProdotto">
+                            <h2>Enterprise</h2>
+                            <p class="font-weight700">&euro; 12.00</p>
+                            <p class="margineDivisore">/mese</p>
+
+                            <ul>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>1 utente</p>
+                                </li>
+
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>5 TB di spazio di archiviazione sicuro</p>
+                                </li>
+
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p class="margineDivisore">Funzioni di produttività premium e condivisione file
+                                        semplice e sicura</p>
+                                </li>
+                            </ul>
+
+                            <a id="provaGratuita" class="pulsante" href="#">Prova gratis per 30 giorni</a>
+
+                            <p class="margineDivisore"><span>oppure</span> <a href="#">acquista ora</a></p>
+
+                            <p id="caratteristicheProdotto" class="font-weight700">Punti Salienti del piano</p>
+
+                            <ul>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Invia file fino a 100 GB con Dropbox Transfert</p>
+                                </li>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Cartelle offline su dispositivi mobili</p>
+                                </li>
+                                <li class="descrizione flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Cartelle offline su dispositivi mobili</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="partnerDrop contenitoreMain">
@@ -62,7 +247,7 @@
             <div class="operazioni contenitoreMain">
                 OPERAZIONI
             </div>
-            
+
             <div class="loghiParter">
                 LOGHI PARTNER
             </div>

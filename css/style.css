@@ -71,37 +71,213 @@ header ul{
     font-weight: 400;
 }
 
-/* Realizzazione struttura area sotto l'header */
+/* Header: Area presentazione sotto l'header */
 .contenitorePrimario{
+    padding-top: 65px;
     background-color: #b4d0e7;
     width: 100%;
-    height: 582px;
 }
 
 .areaJumbo{
     max-width: 950px;
-    height: 100%;
     margin: 0 auto;
-    background-color: #86bfed;
 }
 
-/* Realizzazione struttura area principale */
+.areaJumbo h1{
+    padding: 60px 0 40px;
+    font-size: 3.9rem;
+    font-weight: 800;
+}
+
+.presentazioneJumbo{
+    position: relative;
+}
+
+.testoPulsanti{
+    flex-basis: 31%;
+}
+
+.testoPulsanti a, 
+.testoPulsanti p{
+    display: block;
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#stylePulsante{
+    text-decoration: none;
+    padding: 10px;
+    margin: 25px 0 20px;
+    color: #fff;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.presentazioneJumbo img{
+    position: absolute;
+    left: 30%;
+    flex-grow: 1;
+    max-width: 680px;
+}
+
+#annullaIscrizione{
+    padding: 0px;
+    margin: 0;
+}
+
+#annullaIscrizione:hover{
+text-decoration: underline;
+}
+
+.freccia{
+    font-size: 2.5rem;
+    margin: 55px 0 15px;
+}
+
+/* Main: Area principale contenente le info sul prodotto */
 .contenitoreSecondario{
-    background-color: #d3b3cd;
     width: 100%;
-    height: 4000px;
+    height: 4000px; /* da rimuovere */
 }
 
 .contenitoreMain{
-    max-width: 780px;
+    max-width: 790px;
     margin: 0 auto;
-    
 }
 
 .areaPrezzi{
-    background-color: #86ed92;
-    height: 1000px;
+    padding-top: 120px;
+    background-color: #fff3fd;
+    height: 1500px; /* da rimuovere */
 }
+
+.areaPrezzi h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.radioSceltaPrezzo{
+    padding: 42px 0;
+}
+
+input[type=radio]{
+    width: 17px;
+    height: 17px; 
+    border: 2px solid #d1d1d4;
+    background-color: #fff;
+    background-clip: content-box;
+    appearance: none;
+    border-radius: 50%;
+    line-height: 25px;
+    vertical-align: middle;
+} 
+
+input[type="radio"]:checked {
+    border: 4px solid #0061ff;
+	background-color: #fff;
+}
+
+label{
+    padding-right: 40px;
+    font-size: 0.7rem;
+}
+
+/* Main: ontenitore relativo alla scheda prodotto */
+.abbonamento{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 13px;
+}
+
+.schedaPrezzo{
+    width: calc(100% / 3 - 2px - 26px);
+    border: 1px solid #bdbdc0;
+}
+
+.titoloScheda{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #bdbdc0;
+    padding: 8px 0;
+}
+
+.titoloScheda i{
+    padding-right: 5px;
+}
+
+.titoloScheda h3{
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.schedaProdotto{
+    padding: 25px;
+}
+
+.schedaProdotto h2{
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+#provaGratuita{
+    color: #fff;
+    font-size: 0.7rem;
+    display: block;
+    text-align: center;
+    padding: 9px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.margineDivisore{
+    margin-bottom: 30px;
+}
+
+.descrizione{
+    list-style-type: none;
+}
+
+.descrizione i{
+    flex-basis: 5px;
+    padding: 7px 0;
+    padding-right: 5px;
+}
+
+.schedaProdotto p,
+.descrizione p{
+    flex-grow: 1;
+    font-size: 0.7rem;
+    padding: 5px 0;
+}
+
+.schedaProdotto p span{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #bdbdc0;
+}
+
+.font-weight700{
+    font-weight: 700;
+}
+
+#caratteristicheProdotto{
+    font-size: 0.7rem;
+    padding-top: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .partnerDrop{
     background-color: #e8ed86;
