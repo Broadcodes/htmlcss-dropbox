@@ -213,6 +213,11 @@ header ul li a:not(a[id="logo"], a[id="pulsante"]):hover {
     margin: 0 auto;
 }
 
+.contenitoreMain a:link,
+.contenitoreMain a:visited {
+    color: #2f2f2f;
+}
+
 .areaPrezzi {
     padding: 120px 0;
 }
@@ -402,6 +407,11 @@ label[for="annuale"] {
     font-weight: 500;
 }
 
+.areaPartner a:link,
+.areaPartner a:visited {
+    color: #2f2f2f;
+}
+
 .pulsante-bianco {
     background-color: #fff;
     padding: 6px 11px;
@@ -418,8 +428,11 @@ label[for="annuale"] {
     font-size: 2rem;
 }
 
+.operazioni a:link,
+.operazioni a:visited,
 .operazioni a {
     text-decoration: none;
+    color: #2f2f2f;
 }
 
 .operazioni a:hover {
