@@ -213,8 +213,8 @@ header ul li a:not(a[id="logo"], a[id="pulsante"]):hover {
     margin: 0 auto;
 }
 
-.contenitoreMain a:link,
-.contenitoreMain a:visited {
+.contenitoreMain a[class="pulsante-bianco"]:link,
+.contenitoreMain a[class="pulsante-bianco"]:visited {
     color: #2f2f2f;
 }
 
