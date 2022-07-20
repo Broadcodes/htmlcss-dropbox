@@ -64,15 +64,13 @@ header {
 }
 
 header ul {
-    height: 65px;
     list-style-type: none;
     justify-content: space-around;
     align-items: center;
 }
 
 header ul li a:not(a[id="logo"], a[id="pulsante"]) {
-    transition: all 200ms;
-    padding: 15px 0;
+    height: 65px;
     display: flex;
     align-items: center;
 }
@@ -396,6 +394,7 @@ label {
 
 .operazioni a:hover {
     text-decoration: underline;
+    color: rgb(30, 30, 30)
 }
 
 .contenitoreSchedeOperazioni {
@@ -526,7 +525,6 @@ label {
 .areaDescrizioneFaq{
     flex-wrap: wrap;
     cursor: pointer;
-    transition: all 5s;
 }
 
 .domandaFaq{
@@ -547,16 +545,7 @@ label {
 
 .areaDescrizioneFaq:active .descrizioneNascostaFaq{
     display: block;
-    
 }
-
-
-
-
-
-
-
-
 
 /* Footer */
 footer {
