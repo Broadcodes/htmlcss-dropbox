@@ -243,7 +243,8 @@ input[type="radio"]:checked {
     background-color: #fff;
 }
 
-label {
+label[for="mensile"],
+label[for="annuale"] {
     padding-right: 40px;
     font-size: 0.7rem;
 }
@@ -256,9 +257,38 @@ label {
     padding-bottom: 40px;
 }
 
-.schedaPrezzo {
+#schedaPrezzo1,
+#schedaPrezzo2,
+#schedaPrezzo3 {
     width: calc(100% / 3 - 2px - 26px);
     border: 1px solid #bdbdc0;
+    position: relative;
+}
+
+.abbonamento:hover #schedaPrezzo1,
+.abbonamento:hover #schedaPrezzo2,
+.abbonamento:hover #schedaPrezzo3{
+    animation-name: animazioneScheda;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animazioneScheda{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.04);}
+    100%{transform: scale(1);}
+}
+
+.abbonamento:hover #schedaPrezzo1{
+    animation-delay: 0s;
+}
+
+.abbonamento:hover #schedaPrezzo2{
+    animation-delay: 0.5s;
+}
+
+.abbonamento:hover #schedaPrezzo3{
+    animation-delay: 1s;
 }
 
 .titoloScheda {
@@ -515,16 +545,18 @@ label {
 /* Main: area faq */
 .faq {
     width: 100%;
-    height: 340px;
 }
 
 .faq h2{
     font-size: 2rem;
 }
 
+label[class="flex styleArea"]{
+    cursor: pointer;
+}
+
 .areaDescrizioneFaq{
     flex-wrap: wrap;
-    cursor: pointer;
 }
 
 .domandaFaq{
@@ -543,7 +575,15 @@ label {
     padding: 0 80px 30px 30px;
 }
 
-.areaDescrizioneFaq:active .descrizioneNascostaFaq{
+#visualizzaFaq1,
+#visualizzaFaq2,
+#visualizzaFaq3{
+    display: none;
+}
+
+#visualizzaFaq1:checked ~ .descrizioneNascostaFaq,
+#visualizzaFaq2:checked ~ .descrizioneNascostaFaq,
+#visualizzaFaq3:checked ~ .descrizioneNascostaFaq{
     display: block;
 }
 
