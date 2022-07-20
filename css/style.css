@@ -370,7 +370,7 @@ label[for="annuale"] {
     font-weight: 700;
 }
 
-#caratteristicheProdotto {
+.caratteristicheProdotto {
     font-size: 0.7rem;
     padding-top: 35px;
 }
@@ -586,6 +586,16 @@ label[class="flex styleArea"]{
 #visualizzaFaq3:checked ~ .descrizioneNascostaFaq{
     display: block;
 }
+
+#visualizzaFaq1:checked ~ label i,
+#visualizzaFaq2:checked ~ label i,
+#visualizzaFaq3:checked ~ label i{
+    transform: rotateX(0.5turn);
+}
+
+
+
+
 
 /* Footer */
 footer {
